@@ -168,9 +168,6 @@
 .services{
   background-color: #F6F8F7;
 }
-.slogo{
-
-}
 .services-logo{
   padding-top: 44px;
   display: flex;
@@ -602,8 +599,7 @@ justify-content: flex-end;
   padding-top: 85px;
   padding-bottom: 83px;
 }
-.footer-info{
-}
+
 .address{
   display: flex;
   justify-content: space-between;
