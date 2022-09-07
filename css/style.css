@@ -6,6 +6,9 @@
 .header{
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  padding-top: 12px;
+  padding-bottom: 12px;
   margin-left: 112px;
   margin-right: 112px;
 }
@@ -17,6 +20,10 @@
   line-height: 35px;
   color: #2947A9;
 }
+.main-logo:hover{
+  transform: matrix(1, 0, 0, -1, 0, 0);
+  color: #F9995D;
+}
 .header-links{
   display: flex;
   justify-content: space-between;
@@ -26,6 +33,9 @@
 .headermenu-links{
   margin-right: 50px;
 }
+.headermenu-links:hover{
+  transform: matrix(1, 0, 0, -1, 0, 0);
+}
 
 .headermenu-list{
   font-family: 'Work Sans';
@@ -34,6 +44,9 @@
   font-size: 18px;
   line-height: 21px;
   text-decoration: none;
+}
+.headermenu-list:hover{
+  color: #F9995D;
 }
 
 .the-box{
@@ -47,11 +60,77 @@
   margin-right: 14px;
 }
 
-.hero{
-  height: 100%;
-  width: 100%;
+.mainpicture{
+  background: url("../img/ICA.jpg");
+  background-size: cover;
 }
-
+.mainpicture-bar{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+.mainpicture-info{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 14.6346px 7.31732px 7.31732px;
+  background: #3559C7;
+  width: 305px;
+  height: 100px;
+}
+.mainpicture-info h2{
+  font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14.6346px;
+    line-height: 17px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 15px;
+}
+.mainpicture-info p{
+  font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17.5616px;
+    line-height: 21px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.mainpicture-theme{
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 72px;
+  line-height: 84px;
+  color: #292E3D;
+  padding-top: 174px;
+  padding-bottom: 174px;
+  padding-left: 84px;
+}
+.mainpicture-buttons{
+  display: flex;
+}
+.mainpicture-button{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 41.4px;
+  background: #292E3D;
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  color: #FFFFFF;
+  margin-right: 1px;
+}
+.nextbutton{
+  margin-right: 0;
+}
 .our-reputation{
   margin-top: 60px;
   display: flex;
@@ -79,7 +158,12 @@
 .feature {
   width: 292px;
   margin-right: 40px;
-  border-style: groove;
+  border: 1.02443px solid #E0E3EB;
+  border-radius: 2.92693px;
+}
+
+.feature:hover{
+  box-shadow: 0px 0px 11.7077px 2px rgba(17, 24, 39, 0.1);
 }
 
 .feature :last-child {
@@ -122,8 +206,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
   background-color: #2947A9;
+  box-shadow: 0px 20px 24px -4px rgba(17, 24, 39, 0.1), 0px 8px 8px -4px rgba(17, 24, 39, 0.04);
+  border-radius: 2px;
 }
 .aboutus-theme{
   color: #FFFFFF;
@@ -133,6 +218,7 @@
   font-size: 36px;
   line-height: 42px;
   margin-top: 50px;
+  margin-right: 289px;
 }
 .aboutusinfo{
   width: 307px;
@@ -140,6 +226,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  margin-right: 138px;
 }
 .aboutus-info{
   font-family: 'Work Sans';
@@ -147,6 +234,7 @@
   font-weight: 400;
   font-size: 20px;
   line-height: 20px;
+  width: 400px;
   color: #FFFFFF;
 }
 .aboutus-button{
@@ -163,6 +251,7 @@
   line-height: 21px;
   text-align: center;
   color: #2947A9;
+  margin-right: 229px;
 }
 
 .services{
@@ -194,6 +283,8 @@
   width: 271px;
   height: 181px;
   background-color: #FFFFFF;
+  color: #2947A9;
+  font-weight: bold;
 }
 .renovation{
   margin-bottom: 48px;
@@ -205,6 +296,8 @@
   width: 271px;
   height: 181px;
   background-color: #2947A9;
+  color: #FFFFFF;
+  font-weight: bold;
 }
 .construction-hr{
   width: 60px;
@@ -234,11 +327,13 @@
   line-height: 70px;
   margin: 0px;
   margin-top: 100px;
+  margin-bottom: 30px;
 }
 .experience-info{
   color: #525B7A;
   font-size: 20px;
   line-height: 23px;
+  margin-bottom: 60px;
 }
 .experience-button{
   color: #FFFFFF;
@@ -247,6 +342,15 @@
   gap: 10px;
   border-radius: 2px;
   padding: 16px 20px;
+}
+.happy-clients{
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17.5616px;
+  line-height: 21px;
+  font-weight: bold;
+  color: #667299;
 }
 .happyclients-hr{
   background-color: #F9995D;
@@ -264,6 +368,7 @@
 .happyclients-number{
   line-height: 84px;
   font-size: 72px;
+  font-weight: bold;
   color:#292E3D;
   margin: 0px;
   margin-left: 30px;
@@ -326,6 +431,9 @@
 .consultation{
   background: url("../img/unsplash_MP0bgaS_d1c.jpg");
 }
+.free-infos{
+  display: flex;
+}
 .free-theme{
   font-family: 'Work Sans';
   font-style: normal;
@@ -342,6 +450,11 @@
   font-size: 24px;
   line-height: 28px;
   color: #FFFFFF;
+}
+.underlin{
+  text-decoration: underline;
+  text-decoration-color: #C2C7D6;
+  margin-left: 10px;
 }
 .free-button{
   background: fixed;
@@ -372,8 +485,11 @@
   justify-content: space-around;
   color: #292E3D;
   margin: 0;
-  margin-left: 25px;
+  margin-left: 82px;
   margin-bottom: 40px;
+}
+.side-menu{
+  margin-left: 80px;
 }
 .side-menu ul{
 list-style: none;
@@ -382,6 +498,9 @@ flex-direction: row-reverse;
 align-items: center;
 justify-content: flex-end;
 }
+.side-menu ul li{
+  padding-bottom: 15px;
+}
 .side-menu ul li a{
   text-decoration: none;
   font-family: 'Work Sans';
@@ -389,7 +508,7 @@ justify-content: flex-end;
   font-weight: 500;
   font-size: 24px;
   line-height: 28px;
-  margin-left: 16px;
+  padding-left: 4px;
   text-align: center;
   color: #C2C7D6;
 }
@@ -406,9 +525,6 @@ justify-content: flex-end;
 }
 .side-menu ul li a:hover{
   color: #2947A9;
-}
-.examples {
-  width: 920px;
 }
 .firstpair{
   display: flex;
@@ -451,13 +567,15 @@ justify-content: flex-end;
   line-height: 21px;
   color: #FFFFFF;
 }
+.examples{
+  width: 800px;
+}
 .examples ul{
   width: 844px;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-top: 32px;
-  margin-left: 38px;
   border-radius: 50px;
 }
 .examples ul li{
@@ -467,14 +585,24 @@ justify-content: flex-end;
   line-height: 50px;
   margin: 0 5px;
 }
+.examples ul li :first-child{
+  margin-right: 6px;
+}
+.examples ul li :last-child{
+  margin-left: 5px;
+}
+.examples-button{
+  display: flex;
+  justify-content: space-around;
+}
 .examples ul li.circle{
   height: 16px;
   width: 16px;
   text-align: center;
   border-radius: 50%;
-  margin-right: 16px;
   border: 2px solid #C2C7D6;
 }
+
 .circle:hover {
   background-color: #2947A9;
 }
@@ -489,16 +617,17 @@ justify-content: flex-end;
 .back{
   display: flex;
   color: #FFFFFF;
-  width: 295px;
+  width: 330px;
   height: 64px;
   border: 1px dashed;
 }
 .next{
   color: #FFFFFF;
-  width: 295px;
+  width: 330px;
   height: 64px;
   border: 1px dashed;
 }
+
 .logo-info{
   display: flex;
   flex-direction: column;
@@ -592,6 +721,7 @@ justify-content: flex-end;
   line-height: 21px;
   text-align: center;
   color: #FFFFFF;
+  border-radius: 2px;
 }
 .footer{
   display: flex;
@@ -737,4 +867,20 @@ justify-content: flex-end;
 }
 .socials-link :last-child{
   margin: 0;
+}
+.bottom-box{
+  background-color: #2947A9;
+  display: flex;
+  align-items: center;
+  padding-top: 19px;
+  padding-bottom: 19px;
+}
+.bottom-text{
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+  margin-left: 82px;
 }
